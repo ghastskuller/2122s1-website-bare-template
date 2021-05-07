@@ -212,14 +212,14 @@ We will be building a dashboard with a single graph to monitor the number of err
     </div>
     ```
 
-31. The element `div[@id="error-rate"]/div[@class="chart"]` will be the element where the graph will be drawn in. We will select that element and store in a variable `chartDom`.
+31. The element `div[@id="error-rate"]/div[@class="chart"]` will be the element where the graph will be drawn in. We will select that element and store in a variable `chartDom`. Run the following code snippet in the browser's console.
 
     ```js
     let chartContainerDom = document.getElementById('error-rate');
     let chartDom = chartContainerDom.querySelector('.chart');
     ```
 
-32. We can also prepare some dummy data to simulate the drawing of the chart, looking at the examples in the documentation, the following should be a good enough sample array and option:
+32. We can also prepare some dummy data to simulate the drawing of the chart, looking at the examples in the documentation, the following should be a good enough sample array and option. Run the following code snippet in the browser's console.
 
     ```js
     let array = [
@@ -234,7 +234,7 @@ We will be building a dashboard with a single graph to monitor the number of err
     let options = {};
     ```
 
-33. Putting them together, we can use do the following to test out the creating and drawing of chart:
+33. Putting them together, we can use do the following to test out the creating and drawing of chart. Run the following code snippet in the browser's console.
 
     ```js
     import('./scripts/google_chart.mjs').then((googleCharts) => {
